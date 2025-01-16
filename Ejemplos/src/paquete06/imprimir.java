@@ -5,15 +5,21 @@
  */
 package paquete06;
 
-import paquete05.*;
 
 /**
  *
  * @author reroes
  */
 public class imprimir {
-
-    public static int obtenerMultiplicacion(int d, int j) {
-        return d * j;
+    public static void imprimirMensaje(int a, int b, int sum, int mult){
+        System.out.printf("La suma de %d + %d es igual a: %d\n"
+                + "La multiplicacion de %d * %d es igual a: %d\n",
+                a,b,
+                sum,
+                a, b,
+                mult);
     }
+    
+    
 }
+

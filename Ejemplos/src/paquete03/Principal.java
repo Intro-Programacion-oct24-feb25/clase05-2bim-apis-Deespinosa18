@@ -8,7 +8,7 @@ package paquete03;
 import paquete04.OperadorUno;
 import paquete04.OperadorDos;
 import paquete05.OperadorTres;
-
+import paquete06.imprimir;
 // import paquete04.*;
 /**
  *
@@ -22,11 +22,12 @@ public class Principal {
         int suma = OperadorDos.obtenerSuma(valorA, valorB);
         int multiplicacion = OperadorTres.obtenerMultiplicacion(valorA, 
                                                                 valorB);
-        System.out.printf("La suma de %d + %d es igual a: %d\n"
-                + "La multiplicacion de %d * %d es igual a: %d\n",
-                valorA,valorB,
-                suma,
-                valorA, valorB,
-                multiplicacion);
+        /*
+        Hacemos importacion de clases para asi poder utilizar codigo de otras clases o 
+        proyectos para asi poder aprovecharlos, hacemos el importe mediante el
+        nombre del paquete y luego el punto mas el nombre de la clase y hacemos
+        el proceso igual que arriba    
+        */        
+        imprimir.imprimirMensaje(valorA, valorB, suma, multiplicacion);
     }
 }
