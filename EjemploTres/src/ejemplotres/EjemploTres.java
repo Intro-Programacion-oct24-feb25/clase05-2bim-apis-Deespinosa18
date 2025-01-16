@@ -17,23 +17,14 @@ public class EjemploTres {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // 
-        int a = 100;
-        int b = 100;
-        // System.out.println(NumberUtils.compare(a, b));
-        // El número 100 es mayor a 10
-        // El número 10 es menor a 100
-        // El número 100 es igual a 100
-        
-        
-        // System.out.println( obtenerDecimal("10.2") + 20 );
-        System.out.printf("El número mayor es: %.2f\n", 
-                NumberUtils.max(10.2, 101.1, 114.2) );
+         String[] dataInicial = {"100", "90", "1n", "10", "H1", "H2"}; 
+           int [] dataFinal = new int [6];
+         for (int i = 0; i < dataInicial.length; i++) {
+             dataFinal[i] = NumberUtils.toInt(dataInicial[i]);
+            
+        }
+         for (int i = 0; i <dataFinal.length; i++) {
+             System.out.println(dataFinal[i]);
+        }
     }
-    
-    public static double obtenerDecimal(String cadena){
-        double d = NumberUtils.createDouble(cadena);
-        return d;
-    }
-    
 }
