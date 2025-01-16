@@ -19,11 +19,15 @@ public class Ejemplo03 {
         int numeroDeElementos = 20;
         int limite = 100;
         int [] valores = obtenerValores (numeroDeElementos, limite);
-        for (int i = 0; i < valores.length; i++) {
-            System.out.printf("%d\n",valores[i] );
-        }
-        
+      
+       presentarDatos(valores);  
     }
+   public static void presentarDatos (int [] v){
+    for (int i = 0; i < v.length; i++) {
+            System.out.printf("%d\n",v[i] );
+}
+   }
+    
     
     public static int obtenerNumero(int limite) {
         // objeto generador de números aleatorios
